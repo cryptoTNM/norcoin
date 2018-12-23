@@ -9,7 +9,7 @@ This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurren
 ### Preparation
 
 1. Create an account on [GitHub.com](github.com)
-2. Fork [CryptoNote repository](https://github.com/cryptonotefoundation/cryptonote)
+2. Fork [CryptoNote repository](https://github.com/cryptoTNM/norcoin.git)
 3. Buy one or two Ubuntu-based dedicated servers (at least 2Gb of RAM) for seed nodes.
 
 
@@ -106,8 +106,8 @@ It's better to choose ports that aren't used by other software or coins. See kno
 
 Example:
 ```
-const int P2P_DEFAULT_PORT = 17236;
-const int RPC_DEFAULT_PORT = 18236;
+const int P2P_DEFAULT_PORT = 287;
+const int RPC_DEFAULT_PORT = 288;
 ```
 
 
@@ -115,7 +115,7 @@ const int RPC_DEFAULT_PORT = 18236;
 
 This identifier is used in network packages in order not to mix two different cryptocoin networks. Change all the bytes to random values for your network:
 ```
-const static boost::uuids::uuid CRYPTONOTE_NETWORK = { { 0xA1, 0x1A, 0xA1, 0x1A, 0xA1, 0x0A, 0xA1, 0x0A, 0xA0, 0x1A, 0xA0, 0x1A, 0xA0, 0x1A, 0xA1, 0x1A } };
+const static boost::uuids::uuid CRYPTONOTE_NETWORK = { { 0x4a, 0x5b, 0x5c, 0x5d, 0x5e, 0x4f, 0x4a, 0x4b, 0x5c, 0x4d, 0x01, 0x12, 0x13, 0x14, 0x05, 0x16} };
 ```
 
 
@@ -126,8 +126,8 @@ Add IP addresses of your seed nodes.
 Example:
 ```
 const std::initializer_list<const char*> SEED_NODES = {
-  "111.11.11.11:17236",
-  "222.22.22.22:17236",
+  "111.11.11.11:287",
+  "222.22.22.22:288",
 };
 ```
 
